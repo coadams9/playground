@@ -1,27 +1,34 @@
-// const addTo = function (passed) {
+// var num = 4
 
-//     const add = function (inner) {
-//         return passed + inner
+// const outer = () => {
+//     var num = 2
+//     const inner = () => {
+//         console.log(num)
+//         var num = 5
+//         console.log(num)
 //     }
-
-//     return add
+//     inner()
 // }
-
-// const addThree = new addTo(3)
-
-// console.log(addThree(2))
-
-
-// function outer() {
-console.log(num)
-var num = 4
-//     console.log('in here')
-//     return num
-//     // const num = 3
-// }
-
 
 // outer()
-// setTimeout((num) => {
-//     console.log(num)
-// }, 1000)
+
+// {
+//     var num = 3
+//     {
+//         num++
+// console.log(num)
+
+//     }
+// }
+
+function outer2() {
+    function inner2() {
+        // num
+        console.log(num)
+    }
+    inner2()
+}
+
+var num = 4
+outer2()
+
