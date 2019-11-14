@@ -1,34 +1,22 @@
-// var num = 4
+// function password() {
 
-// const outer = () => {
-//     var num = 2
-//     const inner = () => {
-//         console.log(num)
-//         var num = 5
-//         console.log(num)
+//     let word = 'secret'
+//     function encrypt() {
+//         return word + '1234'
 //     }
-//     inner()
+//     return encrypt()
 // }
 
-// outer()
 
-// {
-//     var num = 3
-//     {
-//         num++
-// console.log(num)
+// password()
 
-//     }
-// }
+// const pro = new Promise
 
-function outer2() {
-    function inner2() {
-        // num
-        console.log(num)
-    }
-    inner2()
+// console.log(pro)
+
+const wait = time => {
+    return new Promise((resolve) => setTimeout(resolve, time))
 }
 
-var num = 4
-outer2()
 
+wait(3000).then(() => console.log('Hello!'))

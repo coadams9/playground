@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "closure",
+            "program": "${workspaceFolder}/closure.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "test",
             "program": "${workspaceFolder}/test.js"
         }
