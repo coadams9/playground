@@ -1,3 +1,13 @@
-const askMe = require('./logger')
+const EventEmitter = require('events')
 
-askMe('carbs in cheese')
+
+
+const Logger = require('./logger')
+const logger = new Logger()
+
+//Register a Listener
+emitter.on('messageLogged', (arg) => {
+    console.log('Listener called', arg)
+})
+
+logger.askMe('message')
